@@ -1,0 +1,18 @@
+{
+  "schema_version": "5.1",
+  "project_id": "PROJECT_ID",
+  "authority_order": ["current_user_instruction", "universal_product_master", "requirements_document", "approved_brand_assets", "approved_visual_references", "market_research", "model_interpretation"],
+  "platform_profile": "custom",
+  "output_contracts": [],
+  "copy_policy": {"source": "copy_master", "exact_source_locator_required": true, "rewrite_default": false, "ocr_required": true},
+  "logo_policy": {"approved_asset_ids": [], "invent_logo_forbidden": true},
+  "font_policy": {"approved_records": [], "unrecorded_fallback_forbidden": true},
+  "reference_policy": {"minimum_valid_per_direction": 50, "minimum_candidates_per_direction": 70, "high_visual_utility_required": true},
+  "market_research_policy": {"core_competitor_count": 10, "target_selling_platform_required": true, "target_country_or_region_required": true, "same_category_required": true, "cross_platform_core_count_forbidden": true, "observable_performance_required": true, "accepted_performance_signals": ["dated_category_or_bestseller_rank", "platform_displayed_sales_or_orders", "rating_plus_material_review_volume", "target_platform_verifiable_retail_data"], "minimum_negative_or_objection_records": 30, "minimum_competitors_with_negative_feedback": 6, "estimated_rank_or_sales_forbidden": true, "smaller_sample_requires_explicit_user_approval": true},
+  "generation_policy": {"mode": "integrated_full_canvas", "provider": "codex_builtin", "model_recording_id": "codex_builtin_imagegen", "selection_mode": "fixed", "external_fallback": "forbidden", "prompt_output_mode": "single_universal_prompt", "compatible_prompt_targets": ["codex_builtin", "gpt_image_2", "banana_2", "liblibai"], "portable_input_contract": "one_product_image_plus_complete_prompt", "shared_direction_prompt_forbidden": true, "attempt_limit": 2, "content_authority": "user_requirements", "external_claim_verification_required": false, "separate_layer_delivery_forbidden": true},
+  "multi_agent_policy": {"enabled_when_available": true, "research_agents": ["market_intelligence", "visual_reference_research"], "direction_agents": ["direction_d1", "direction_d2", "direction_d3"], "production_agent_pattern": "production_<direction>_<index>", "max_concurrent_research_agents": 2, "max_concurrent_direction_agents": 3, "max_concurrent_production_agents": 3, "production_asset_overlap_forbidden": true, "multi_direction_production_allowed": true, "root_owns_canonical_files": true, "workstream_isolation_required": true, "root_preassigns_visual_arguments_and_shots": true},
+  "typography_profile": {"default": "twin_stars_montserrat", "approved_brand_override_allowed": true},
+  "diversity_exemption_policy": {"white_background_asset_ids": [], "technical_diagram_asset_ids": []},
+  "qa_policy": {"hard_gates_cannot_be_averaged": true, "comparison_qa_level": "full_v51", "ocr_unavailable_status": "blocked_runtime_ocr_unavailable", "visual_review_required": true, "maximum_upscale_factor": 1.05, "maximum_resample_count": 1, "minimum_global_edge_variance": 4.0, "roi_sharpness_required": ["product", "copy_when_present", "logo_when_present", "face_when_present"], "set_diversity_thresholds": {"minimum_pairwise_core_differences": 3, "minimum_within_direction_shot_differences": 2, "minimum_angle_differences": 1, "minimum_cross_direction_differences": 4, "maximum_dominant_share_for_sets_of_four_or_more": 0.5, "duplicate_full_shot_signature_forbidden": true, "proof_mode_must_differ_across_directions": true, "minimum_cross_direction_semantic_differences": 1, "minimum_cross_direction_shot_differences": 2}},
+  "updated_at": "ISO-8601"
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Twin Stars Agent Max"
+  short_description: "解析图需与卖点，按授权选方向，代表图验证后批量制作并集中独立终检"
+  default_prompt: "使用 $twin-stars-agent-max 解析我的图需与卖点、定向研究并规划整套视觉，在明确授权的范围和预算内选择方向，验证代表图后批量制作并集中独立终检交付。"
+policy:
+  allow_implicit_invocation: true
+

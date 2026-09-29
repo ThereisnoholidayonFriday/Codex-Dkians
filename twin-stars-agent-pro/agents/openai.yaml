@@ -1,0 +1,6 @@
+interface:
+  display_name: "Twin Stars Agent Pro"
+  short_description: "独立快速商业视觉流程：定向快查、三案各一图、一次选择、核心自检交付"
+  default_prompt: "使用 $twin-stars-agent-pro，根据我的产品图和需求定向快查，制作三个方向各一张样图，待我选定方向后完成整套图片、完整中文 Prompt 和简短说明。"
+policy:
+  allow_implicit_invocation: true

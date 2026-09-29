@@ -1,0 +1,57 @@
+{
+  "schema_version": "5.1",
+  "project_id": "PROJECT_ID",
+  "agent_name": "Twin Stars",
+  "project_name": "PROJECT_NAME",
+  "run_profile": "auto_concept_fast",
+  "input_root": "PROJECT_INPUT_DIRECTORY",
+  "workspace_root": "PROJECT_WORKSPACE_DIRECTORY",
+  "source_read_only": true,
+  "product_category": "auto_detect",
+  "platform_profile": "custom",
+  "target_selling_platform": "TARGET_PLATFORM",
+  "target_country_or_region": "TARGET_COUNTRY_OR_REGION",
+  "target_category_path": "TARGET_CATEGORY_PATH",
+  "market": "MARKET",
+  "visible_copy_language": "SOURCE_LANGUAGE",
+  "document_language": "zh-CN",
+  "authority_order": [
+    "current_user_instruction",
+    "universal_product_master",
+    "requirements_document",
+    "approved_brand_assets",
+    "approved_visual_references",
+    "market_research",
+    "model_interpretation"
+  ],
+  "source_files": [],
+  "output_requests": [
+    {
+      "output_id": "OUTPUT_ID",
+      "purpose": "selling_point_visual",
+      "width": 1080,
+      "height": 1350,
+      "format": "PNG",
+      "platform_profile": "custom",
+      "safe_area": {"left": 54, "top": 54, "right": 54, "bottom": 54},
+      "source": "requirements_reference"
+    }
+  ],
+  "execution_authorization": null,
+  "project_policy_path": "control/project_policy.json",
+  "required_control_files": [
+    "control/universal_product_master.json",
+    "control/requirements_execution_matrix.json",
+    "control/copy_master.json",
+    "control/cast_presence_matrix.json",
+    "control/scene_truth_contract.json",
+    "control/physical_logic_contract.json"
+  ],
+  "uncertainty_policy": {
+    "ask_below_confidence": "high",
+    "minimum_explicit_options": 3,
+    "user_defined_option_required": true,
+    "maximum_questions_per_batch": 3
+  },
+  "updated_at": "ISO-8601"
+}
